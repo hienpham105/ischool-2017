@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewBag.Title = "Chi tiết";
+    Layout = "~/Views/_Layout/_alelaLayout.cshtml";
+}
+
+<div>
+    <div>
+        <h1>
+            <p>@Model.HOGV @Model.TENGV</p>
+        </h1><hr /><br />
+        
+       <div class="top">
+           <div class="pull-left" style="width:50px;height:50px;display:table">
+               <img src="~/Hinhanh/@Model.ANHDAIDIEN" style="width: 254px; border-radius: 18px;height:250px;" /><br />
+           </div>
+           <div class="pull-right" style="width: 785px; ">
+               <span style="display:table-cell;">
+                   <a class="fix-title-2-row" title="Xem chi tiết giảng viên">
+                       Quê Quán: @Model.QUEQUAN<br />
+                       Địa chỉ: @Model.DIACHI<br />
+                       Ngày sinh: @Model.NGAYSINH<br />
+                       SĐT: @Model.SDT<br />
+                       Số chứng minh thư: @Model.CMND<br />
+                       Giới tính: @Model.GIOITINH<br />
+                       Email: @Model.EMAIL<br />
+                       @Model.MAHV<br />
+                       @Model.MACV<br />
+                       @Model.TRANGTHAIGV<br />
+
+                   </a><br />
+               </span>
+           </div>
+       </div>
+        <div class="bottom" style="margin-top: 280px;">
+            @Model.MOTA
+        </div>
+
+        
+    </div>
+</div>
