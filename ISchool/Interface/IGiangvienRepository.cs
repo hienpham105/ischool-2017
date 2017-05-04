@@ -14,6 +14,6 @@ namespace ISchool.Interface
         GIANGVIEN Add(GIANGVIEN item);
         bool Update(GIANGVIEN item);
         bool Delete(int magv);
-        //Hello hiền đẹp trai
+        //Hello hiền đẹp trai 
     }
 }
